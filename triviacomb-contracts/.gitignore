@@ -1,0 +1,87 @@
+# Solana/Anchor specific
+.anchor/
+target/
+node_modules/
+dist/
+app/
+migrations/
+deploy/
+
+# Keypairs and secrets (keep structure but not actual keys)
+keys/*-keypair.json
+!keys/.gitkeep
+*.json
+!tsconfig.json
+!package.json
+!package-lock.json
+!Anchor.toml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build output
+build/
+dist/
+
+# Rust/Cargo specific
+Cargo.lock
+**/target/
+
+# IDL files (will be generated)
+*.idl
+
+# Test artifacts
+test-ledger/
+validator-keypair.json

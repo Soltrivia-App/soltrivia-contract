@@ -1,0 +1,28 @@
+[package]
+name = "reward_distributor"
+version = "0.1.0"
+description = "Custom reward distribution logic program"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "reward_distributor"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.0"
+anchor-spl = "0.30.0"
+solana-program = "~1.18.0"
+spl-token = { version = "^4.0.0", features = ["no-entrypoint"] }
+spl-associated-token-account = { version = "^2.3.0", features = ["no-entrypoint"] }
+borsh = "^0.10"
+arrayref = "0.3"
+num-derive = "^0.4"
+num-traits = "^0.2"
+thiserror = "^1.0"
